@@ -46,13 +46,18 @@ class SignIn extends Component {
             handleChange={this.handleChange}
             label="password"
           />
-
-          <CustomButton type="submit" value="Submit Form">
-            SignIn
-          </CustomButton>
-          <CustomButton onClick={SignInWithGoogle} value="Submit Form">
-            Sign in with Google
-          </CustomButton>
+          <div className="buttons">
+            <CustomButton type="submit" value="Submit Form">
+              SignIn
+            </CustomButton>
+            <CustomButton
+              onClick={SignInWithGoogle}
+              value="Submit Form"
+              isGoogleSignIn
+            >
+              Sign in with Google
+            </CustomButton>
+          </div>
         </form>
       </div>
     );
